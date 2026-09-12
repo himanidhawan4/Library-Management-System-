@@ -13,28 +13,28 @@ Maintaining library records manually can be tedious and prone to errors. This pr
 
 It allows librarians to:
 * Manage book inventory (donate/add new books or remove old ones).
-* Issue books to students and store issue logs[cite: 1].
-* Track returned books and store transaction dates[cite: 1].
-* Display full catalogs and system records[cite: 1].
+* Issue books to students and store issue logs.
+* Track returned books and store transaction dates.
+* Display full catalogs and system records.
 
 ---
 
 ## 🛠️ System Requirements & Prerequisites
 
-* **Operating System:** Windows 7 / 10 / 11[cite: 1]
-* **Python:** Python 3.7 or higher[cite: 1]
-* **Database:** MySQL Server[cite: 1]
-* **Python Driver:** `mysql-connector-python`[cite: 1]
+* **Operating System:** Windows 7 / 10 / 11
+* **Python:** Python 3.7 or higher
+* **Database:** MySQL Server
+* **Python Driver:** `mysql-connector-python`
 
 ---
 
 ## 🗄️ Database Schema
 
-The database `library` consists of 3 primary tables[cite: 1]:
+The database `library` consists of 3 primary tables:
 
-1. **`books`**: Stores book catalog details (`bookname`, `authorname`, `bookcode`, `total`)[cite: 1].
-2. **`issue`**: Stores issue records (`bookname`, `bookcode`, `studentname`, `issuedate`)[cite: 1].
-3. **`return`**: Stores return records (`bookname`, `bookcode`, `studentname`, `returndate`)[cite: 1].
+1. **`books`**: Stores book catalog details (`bookname`, `authorname`, `bookcode`, `total`).
+2. **`issue`**: Stores issue records (`bookname`, `bookcode`, `studentname`, `issuedate`).
+3. **`return`**: Stores return records (`bookname`, `bookcode`, `studentname`, `returndate`).
 
 ---
 
