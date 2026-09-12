@@ -4,7 +4,7 @@ import mysql.connector
 con = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='HIMANIDHAWAN10846',
+    password='HIMANIDHAWAN10846', //anyrandomfilepassword
     database='library'
 )
 mycursor = con.cursor()
