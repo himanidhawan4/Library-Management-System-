@@ -44,3 +44,39 @@ The database `library` consists of 3 primary tables[cite: 1]:
 ```bash
 git clone [https://github.com/your-username/library-management-system.git](https://github.com/your-username/library-management-system.git)
 cd library-management-system
+```
+
+### 2. Set Up the MySQL Database
+Open your MySQL Command Line Client or MySQL Workbench and run the contents of schema.sql:
+
+### 3. Install Python Dependencies
+Install the required MySQL connector module:
+
+```bash
+pip install mysql-connector-python
+```
+
+### 4. Update Database Credentials
+In main.py, update the MySQL connection string with your local MySQL password:
+```python
+con = mysql.connector.connect(
+    host='localhost',
+    user='root',
+    password='YOUR_MYSQL_PASSWORD',
+    database='library'
+)
+```
+### 5. 💻 How to Run
+Execute the main script using Python:
+```bash
+python main.py
+```
+Default Password: nvps
+
+#### 📁 Repository Structure
+```text
+
+├── main.py        # Main Python program (CLI Menu & Logic)
+├── schema.sql     # MySQL database initialization script
+└── README.md      # Project documentation
+```
